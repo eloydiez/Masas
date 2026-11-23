@@ -1,8 +1,9 @@
 {
-  "name": "Masas",
-  "short_name": "Masas",
+  "name": "Psomares",
+  "short_name": "Psomares",
   "description": "Pan, pizza, focaccia y masas dulces: recetas, cálculo y planificación",
   "lang": "es",
+  "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

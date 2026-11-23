@@ -1,7 +1,7 @@
-/* Masas v1 — interfaz. Sin servidor: todo en localStorage. */
+/* Psomares v1 — interfaz. Sin servidor: todo en localStorage. */
 (() => {
 'use strict';
-const VERSION = '1.0.0';
+const VERSION = '1.1.0';
 const KEY = 'masas.v1';
 const $main = document.getElementById('main');
 let RECETAS = [];
@@ -113,7 +113,9 @@ const conf = c => h('span', { class: 'tag ' + (c || 'media') }, 'fiabilidad ' + 
 
 // ------------------------------------------------------------ navegación
 let TAB = 'hacer';
-function go(tab) {
+const pilaTabs = [];
+function go(tab, desdeAtras) {
+  if (!desdeAtras && tab !== TAB) pilaTabs.push(TAB);
   TAB = tab;
   document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === tab));
   render(); window.scrollTo(0, 0);
@@ -379,10 +381,10 @@ function lineaTiempo(steps, now, done) {
 function ics(p, f) {
   const z = d => { d = new Date(d); return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, ''); };
   const esc = s => String(s).replace(/[\\,;]/g, m => '\\' + m).replace(/\n/g, '\\n');
-  const L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Masas//ES'];
+  const L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Psomares//ES'];
   p.steps.filter(s => s.tipo === 'activo').forEach((s, i) => {
     const a = new Date(s.t), b = new Date(a.getTime() + Math.max(5, s.dur) * 6e4);
-    L.push('BEGIN:VEVENT', `UID:${z(a)}-${i}@masas`, `DTSTAMP:${z(new Date())}`, `DTSTART:${z(a)}`, `DTEND:${z(b)}`,
+    L.push('BEGIN:VEVENT', `UID:${z(a)}-${i}@psomares`, `DTSTAMP:${z(new Date())}`, `DTSTART:${z(a)}`, `DTEND:${z(b)}`,
       `SUMMARY:${esc(f.nombre + ': ' + s.titulo)}`, `DESCRIPTION:${esc(s.texto + (s.senal && s.senal !== '—' ? '\nSeñal: ' + s.senal : ''))}`,
       'BEGIN:VALARM', 'ACTION:DISPLAY', `DESCRIPTION:${esc(s.titulo)}`, 'TRIGGER:-PT0M', 'END:VALARM', 'END:VEVENT');
   });
@@ -658,14 +660,14 @@ function vPerfil() {
       P.calib.levadura !== 1 ? h('button', { class: 'btn ghost', onclick: () => { P.calib.levadura = 1; save(); render(); } }, 'Poner a 1') : null),
     h('h3', null, 'Copia de seguridad'), h('div', { class: 'card' }, h('p', { class: 'small muted' }, 'Para pasar tus perfiles e historial del móvil al PC hasta que haya sincronización.'),
       h('div', { class: 'row' },
-        h('button', { class: 'btn sec', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' })), download: 'masas-copia.json' }); document.body.append(a); a.click(); a.remove(); } }, 'Exportar'),
+        h('button', { class: 'btn sec', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' })), download: 'psomares-copia.json' }); document.body.append(a); a.click(); a.remove(); } }, 'Exportar'),
         h('label', { class: 'btn sec', style: 'text-align:center;margin:0;color:var(--acc)' }, 'Importar', h('input', { type: 'file', accept: '.json,application/json', style: 'display:none', onchange: async e => {
           try { const d = JSON.parse(await e.target.files[0].text()); if (!d.perfiles) throw 0; if (!confirm('Esto sustituye todo lo que hay en este dispositivo. ¿Seguir?')) return; S = d; save(); render(); toast('Importado.'); } catch (er) { toast('Ese archivo no es una copia válida.'); }
         } })))),
     h('h3', null, 'Avisos'), h('div', { class: 'card small' }, 'Notificaciones: ', ('Notification' in window) ? Notification.permission : 'no disponibles', ' ',
       h('button', { class: 'btn sec', onclick: async () => { await pedirNotif(); render(); } }, 'Pedir permiso'), ' ',
       h('button', { class: 'btn ghost', onclick: () => notificar('Prueba', 'Así sonarán los avisos.', 'prueba') }, 'Probar')),
-    h('p', { class: 'muted small center' }, `Masas v${VERSION} · ${RECETAS.length} recetas`));
+    h('p', { class: 'muted small center' }, `Psomares v${VERSION} · ${RECETAS.length} recetas`));
 }
 function editorHorno(P, o) {
   const set = (k, v) => { o[k] = v; save(); };
@@ -681,12 +683,30 @@ function editorHorno(P, o) {
     P.hornos.length > 1 ? h('button', { class: 'btn ghost', onclick: () => { P.hornos = P.hornos.filter(x => x !== o); save(); render(); } }, 'Borrar horno') : null);
 }
 
+// ------------------------------------------------------------ botón atrás del móvil
+function atrasApp() {
+  if (TAB === 'recetas' && fichaVista) { fichaVista = null; render(); return true; }
+  if (TAB === 'hacer' && C.hist.length) { atras(); window.scrollTo(0, 0); return true; }
+  if (pilaTabs.length) { go(pilaTabs.pop(), true); return true; }
+  if (TAB !== 'hacer') { go('hacer', true); return true; }
+  return false;
+}
+function prepararAtras() {
+  history.replaceState({ psomares: 'raiz' }, '');
+  history.pushState({ psomares: 'app' }, '');
+  window.addEventListener('popstate', () => {
+    if (atrasApp()) history.pushState({ psomares: 'app' }, '');
+    else history.back();          // ya estamos al principio: salir
+  });
+}
+
 // ------------------------------------------------------------ arranque
 async function init() {
   try { RECETAS = (await (await fetch('recetas.json')).json()).recetas; } catch (e) { $main.textContent = 'No se pudieron cargar las recetas.'; return; }
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
   if (S.marcha) TAB = 'marcha', document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === 'marcha'));
-  render(); vigilar();
+  render(); vigilar(); prepararAtras();
+  const sp = document.getElementById('splash'); if (sp) setTimeout(() => { sp.classList.add('fuera'); setTimeout(() => sp.remove(), 500); }, 1100);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) { vigilar(); if (TAB === 'marcha') { wake = null; pedirWake(); } } });
 }
 init();
