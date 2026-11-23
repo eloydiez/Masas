@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<defs><path id="aro" d="M256 256 m-196 0 a196 196 0 1 1 392 0 a196 196 0 1 1 -392 0"/></defs>
+<circle cx="256" cy="256" r="240" fill="none" stroke="#22201c" stroke-width="3"/>
+<circle cx="256" cy="256" r="168" fill="none" stroke="#22201c" stroke-width="1.5"/>
+<text font-family="'Courier New', 'DejaVu Sans Mono', monospace" font-size="25" fill="#22201c"><textPath href="#aro" startOffset="0" textLength="1218" lengthAdjust="spacing">PAN · PIZZA · FOCACCIA · MASA MADRE · HECHO A MANO · </textPath></text>
+<g transform="translate(256 222) scale(.56) translate(-256 -270)">  <g transform="translate(256 270)">
+    <defs>
+      <radialGradient id="corteza" cx="45%" cy="25%" r="80%">
+        <stop offset="0" stop-color="#e6a65a"/><stop offset=".45" stop-color="#c97a32"/><stop offset=".8" stop-color="#9a5220"/><stop offset="1" stop-color="#6e3714"/>
+      </radialGradient>
+      <linearGradient id="miga" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbe9c4"/><stop offset="1" stop-color="#e8c88f"/></linearGradient>
+      <linearGradient id="oreja" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a3b14"/><stop offset="1" stop-color="#b8692a"/></linearGradient>
+      <clipPath id="forma"><path d="M-160 40 C-168 -60 -96 -128 0 -128 C96 -128 168 -60 160 40 C156 70 110 82 0 82 C-110 82 -156 70 -160 40 Z"/></clipPath>
+    </defs>
+    <ellipse cx="0" cy="84" rx="168" ry="16" fill="#2b1a0f" opacity=".18"/>
+    <path d="M-160 40 C-168 -60 -96 -128 0 -128 C96 -128 168 -60 160 40 C156 70 110 82 0 82 C-110 82 -156 70 -160 40 Z" fill="url(#corteza)"/>
+    <g clip-path="url(#forma)">
+      <!-- marcas del banneton: anillos de harina -->
+      <g fill="none" stroke="#fff4df" stroke-linecap="round" opacity=".38">
+        <path d="M-150 20 C-140 -60 -80 -108 0 -110 C80 -108 140 -60 150 20" stroke-width="5" stroke-dasharray="26 14"/>
+        <path d="M-128 30 C-120 -40 -70 -84 0 -86 C70 -84 120 -40 128 30" stroke-width="5" stroke-dasharray="22 16"/>
+        <path d="M-104 38 C-96 -20 -58 -58 0 -60 C58 -58 96 -20 104 38" stroke-width="4" stroke-dasharray="18 14"/>
+      </g>
+      <!-- sombra de la base -->
+      <path d="M-170 46 C-120 66 120 66 170 46 L170 100 L-170 100 Z" fill="#5a2a0e" opacity=".45"/>
+      <!-- brillo -->
+      <ellipse cx="-58" cy="-86" rx="54" ry="20" fill="#fff3d6" opacity=".35" transform="rotate(-18 -58 -86)"/>
+    </g>
+    <!-- greña: miga abierta -->
+    <path d="M-112 22 C-86 -48 -10 -98 104 -92 C40 -70 -40 -36 -100 30 Z" fill="url(#miga)"/>
+    <!-- oreja levantada -->
+    <path d="M-100 30 C-40 -36 40 -70 104 -92 C60 -60 -10 -20 -78 40 C-88 42 -96 38 -100 30 Z" fill="url(#oreja)"/>
+    <path d="M-100 30 C-40 -36 40 -70 104 -92" fill="none" stroke="#3a1c08" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-112 22 C-86 -48 -10 -98 104 -92" fill="none" stroke="#3a1c08" stroke-width="4" stroke-linecap="round"/>
+    <!-- contorno cómic -->
+    <path d="M-160 40 C-168 -60 -96 -128 0 -128 C96 -128 168 -60 160 40 C156 70 110 82 0 82 C-110 82 -156 70 -160 40 Z" fill="none" stroke="#2b1a0f" stroke-width="7" stroke-linejoin="round"/>
+    <!-- harina suelta -->
+    <g fill="#fff4df" opacity=".8"><circle cx="70" cy="-20" r="3"/><circle cx="96" cy="4" r="2.5"/><circle cx="-130" cy="-6" r="2.5"/><circle cx="40" cy="30" r="2"/></g>
+  </g>
+
+</g>
+<text x="256" y="338" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="50" fill="#22201c">Psomares</text><text x="256" y="372" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" letter-spacing="6" fill="#22201c">— EST. 2026 —</text>
+</svg>
