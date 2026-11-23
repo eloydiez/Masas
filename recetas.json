@@ -1,0 +1,2611 @@
+{
+ "version": "1",
+ "fecha": "2026-11-23",
+ "recetas": [
+  {
+   "id": "pizza-napolitana-avpn",
+   "nombre": "Pizza napolitana (AVPN)",
+   "familia": "pizza",
+   "estilo": "napolitana",
+   "descripcion": "Base fina y blanda que se dobla, borde alto y aireado con manchas. Necesita horno de 430-485 C.",
+   "resultado": {
+    "base": "fina_blanda",
+    "borde": "alto",
+    "sabor": "suave"
+   },
+   "harina": {
+    "tipos": [
+     "00"
+    ],
+    "W": [
+     250,
+     320
+    ],
+    "proteina": null
+   },
+   "agua_pct": [
+    55.6,
+    60,
+    62.5
+   ],
+   "sal_pct": [
+    2.2,
+    2.8,
+    3.75
+   ],
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "directa",
+     "masa_madre"
+    ],
+    "G": "pizza",
+    "reparto_bloque": 0.25,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": [
+     12,
+     24
+    ]
+   },
+   "pieza": {
+    "tipo": "disco",
+    "g_por_pieza": [
+     200,
+     280
+    ],
+    "g_cm2": 0.4,
+    "diametro_cm": [
+     22,
+     35
+    ]
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "incorporacion_progresiva",
+    "tiempo_min": [
+     10,
+     30
+    ],
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [
+    {
+     "nombre": "Amasado",
+     "tipo": "activo",
+     "senal": "masa lisa, no pegajosa"
+    },
+    {
+     "nombre": "Bloque",
+     "tipo": "pasivo",
+     "senal": "superficie lisa y algo hinchada"
+    },
+    {
+     "nombre": "Boleado",
+     "tipo": "activo",
+     "senal": "bolas tensas"
+    },
+    {
+     "nombre": "Reposo de bolas",
+     "tipo": "pasivo",
+     "senal": "bola relajada, +50-80 % de volumen"
+    },
+    {
+     "nombre": "Estirado y horneado",
+     "tipo": "activo",
+     "senal": "borde con manchas, 60-90 s"
+    }
+   ],
+   "horneado": {
+    "T": {
+     "suelo": [
+      380,
+      430
+     ],
+     "boveda": 485
+    },
+    "tiempo_min": [
+     1,
+     1.5
+    ],
+    "vapor": false,
+    "T_interior": null,
+    "superficie": "suelo de horno de lena"
+   },
+   "fuentes": [
+    {
+     "nombre": "AVPN, Disciplinare 2024",
+     "url": "https://www.pizzanapoletana.org/public/pdf/Disciplinare-2024-ENG.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "A",
+   "notas": "Por litro de agua: 1600-1800 g de harina, 40-60 g de sal, 0,1-3 g de levadura fresca. Masa madre < 10 % de la harina."
+  },
+  {
+   "id": "pizza-napolitana-casa",
+   "nombre": "Napolitana en horno domestico",
+   "familia": "pizza",
+   "estilo": "napolitana_casa",
+   "descripcion": "La napolitana adaptada a horno de casa con acero y grill: borde con manchas, algo menos alveolada.",
+   "resultado": {
+    "base": "fina_blanda",
+    "borde": "alto"
+   },
+   "harina": {
+    "tipos": [
+     "00",
+     "0"
+    ],
+    "W": [
+     260,
+     320
+    ],
+    "proteina": null
+   },
+   "agua_pct": [
+    60,
+    63,
+    68
+   ],
+   "sal_pct": [
+    2.5,
+    2.8,
+    3.0
+   ],
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "directa",
+     "nevera",
+     "poolish",
+     "biga"
+    ],
+    "G": "pizza",
+    "reparto_bloque": 0.25,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": [
+     6,
+     72
+    ]
+   },
+   "pieza": {
+    "tipo": "disco",
+    "g_cm2": 0.4
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": {
+     "acero": 290,
+     "grill": "maximo"
+    },
+    "tiempo_min": [
+     3.5,
+     5
+    ],
+    "vapor": false,
+    "T_interior": null,
+    "superficie": "acero arriba con grill + acero abajo"
+   },
+   "fuentes": [
+    {
+     "nombre": "Baking Steel, metodo grill",
+     "url": "https://bakingsteel.com/blogs/recipes/what-temperature-to-bake-pizza",
+     "confianza": "B"
+    },
+    {
+     "nombre": "AVPN, Disciplinare 2024",
+     "url": "https://www.pizzanapoletana.org/public/pdf/Disciplinare-2024-ENG.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "B",
+   "notas": "Mas agua que la AVPN porque el horneado es mas largo y seca mas."
+  },
+  {
+   "id": "pizza-forkish-bola",
+   "nombre": "Pizza de una bola, 8 h (Forkish)",
+   "familia": "pizza",
+   "estilo": "napolitana_casa",
+   "descripcion": "Una sola bola con muy poca levadura y 8 h a temperatura ambiente.",
+   "resultado": {},
+   "harina": {
+    "tipos": [
+     "00"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": [
+    68,
+    70,
+    72
+   ],
+   "sal_pct": 3.0,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "directa"
+    ],
+    "G": "pizza",
+    "reparto_bloque": 0.21,
+    "prefermento": null,
+    "T_masa": [
+     22,
+     24
+    ],
+    "tiempo_total_h": 8
+   },
+   "pieza": {
+    "tipo": "disco",
+    "g_por_pieza": 287,
+    "diametro_cm": 30.5
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Forkish, The Elements of Pizza (James Beard Foundation)",
+     "url": "https://www.jamesbeard.org/recipes/single-pizza-dough-ball",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "166 g harina, 116 g agua, 5 g sal, 0,1 g instantanea; 2 h + 6 h a 21-24 C."
+  },
+  {
+   "id": "pizza-nevera-24h",
+   "nombre": "Pizza 24 h en nevera",
+   "familia": "pizza",
+   "estilo": "nevera",
+   "descripcion": "Masa que se hace la vispera y madura 24 h en frio: mas sabor y mas facil de organizar.",
+   "resultado": {},
+   "harina": {
+    "tipos": [
+     "00",
+     "0"
+    ],
+    "W": [
+     260,
+     320
+    ],
+    "proteina": null
+   },
+   "agua_pct": [
+    58,
+    62,
+    66
+   ],
+   "sal_pct": 2.2,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "nevera"
+    ],
+    "G": "pizza",
+    "reparto_bloque": 0.3,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": 25
+   },
+   "pieza": {
+    "tipo": "disco",
+    "g_cm2": 0.4
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Weekend Bakery, 24h pizza dough",
+     "url": "https://www.weekendbakery.com/posts/a-pizza-adventure-part-ii-new-24h-dough-recipe/",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "585 g harina, 2,6 g instantanea; 24 h a ~6 C y 1 h fuera."
+  },
+  {
+   "id": "pizza-teglia",
+   "nombre": "Pizza en bandeja (al taglio)",
+   "familia": "pizza",
+   "estilo": "bandeja",
+   "descripcion": "Masa muy hidratada en bandeja: alta, aireada y crujiente por abajo. Va bien en horno de casa.",
+   "resultado": {
+    "base": "gruesa_esponjosa",
+    "borde": "medio"
+   },
+   "harina": {
+    "tipos": [
+     "0",
+     "fuerza",
+     "Type 550"
+    ],
+    "W": [
+     300,
+     380
+    ],
+    "proteina": null
+   },
+   "agua_pct": [
+    78,
+    82,
+    85
+   ],
+   "sal_pct": [
+    1.8,
+    2.0,
+    2.2
+   ],
+   "azucar_pct": 0,
+   "grasa": {
+    "tipo": "aceite",
+    "pct": [
+     3,
+     6.5
+    ]
+   },
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "nevera",
+     "biga"
+    ],
+    "G": "teglia",
+    "reparto_bloque": 0.8,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": [
+     18,
+     26
+    ]
+   },
+   "pieza": {
+    "tipo": "bandeja",
+    "g_cm2": null
+   },
+   "amasado": {
+    "desarrollo": "bajo",
+    "pliegues": 2,
+    "metodo": "pliegues en bol",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     230,
+     250
+    ],
+    "tiempo_min": [
+     20,
+     25
+    ],
+    "vapor": false,
+    "T_interior": null,
+    "superficie": "bandeja en la parte baja"
+   },
+   "fuentes": [
+    {
+     "nombre": "Cook's Illustrated (America's Test Kitchen)",
+     "url": "https://www.americastestkitchen.com/recipes/11405-pizza-al-taglio-with-prosciutto-and-figs",
+     "confianza": "B"
+    },
+    {
+     "nombre": "Estilo Bonci (tablejourney)",
+     "url": "https://tablejourney.com/dish/pizza-al-taglio/",
+     "confianza": "C"
+    }
+   ],
+   "confianza": "C",
+   "notas": "ATK: 416 g harina, 340 g agua, 1 cdta instantanea (~3,1 g), 16-24 h nevera, 1-1,25 h fuera, 230 C 20-25 min. Gramos por cm2 de bandeja: pendiente."
+  },
+  {
+   "id": "pizza-grano-duro",
+   "nombre": "Pizza di grano duro (Geissler)",
+   "familia": "pizza",
+   "estilo": "nevera_larga",
+   "descripcion": "Con semola de trigo duro y biga; 2-3 dias de nevera.",
+   "resultado": {},
+   "harina": {
+    "tipos": [
+     "semola rimacinata",
+     "Type 550"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": 60,
+   "sal_pct": null,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "biga",
+     "nevera"
+    ],
+    "G": "pizza",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "biga",
+     "harina_pct": 20,
+     "agua_pct": 50,
+     "fresca_pct": 1.0
+    },
+    "T_masa": null,
+    "tiempo_total_h": [
+     48,
+     72
+    ]
+   },
+   "pieza": {
+    "tipo": "disco",
+    "g_cm2": 0.4
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Geissler, Ploetzblog",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2012/Pizza-di-grano-duro-20120704.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "500 g harina total, 300 g agua, 5 g de fresca en total; 2-3 dias a 4-6 C. Validada fuera de muestra (96 %)."
+  },
+  {
+   "id": "pan-french-hamelman",
+   "nombre": "French Bread directo (Hamelman)",
+   "familia": "pan",
+   "estilo": "baguette",
+   "descripcion": "Pan blanco de corteza fina con levadura directa, en una manana.",
+   "resultado": {
+    "miga": "abierta",
+    "corteza": "fina_crujiente",
+    "sabor": "suave"
+   },
+   "harina": {
+    "tipos": [
+     "Type 550",
+     "T65",
+     "fuerza"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": 60,
+   "sal_pct": 1.8,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "directa"
+    ],
+    "G": "pan",
+    "reparto_bloque": 0.62,
+    "prefermento": null,
+    "T_masa": 24,
+    "tiempo_total_h": 4.3
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "g": null
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     240,
+     250
+    ],
+    "tiempo_min": [
+     20,
+     30
+    ],
+    "vapor": true,
+    "T_interior": [
+     96,
+     99
+    ],
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Hamelman, Bread (Ploetzblog)",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2010/French-Bread-nach-Jeffrey-Hamelman-20100611.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "500 g harina, 300 g agua, 9 g sal, 6,3 g fresca; masa a 24 C; 2,5 h + 20 min + 1,5 h."
+  },
+  {
+   "id": "pan-baguette-poolish",
+   "nombre": "Baguette con poolish (Hamelman)",
+   "familia": "pan",
+   "estilo": "baguette",
+   "descripcion": "Baguette con un tercio de la harina en poolish la noche antes: mas sabor y miga mas abierta.",
+   "resultado": {
+    "miga": "abierta",
+    "corteza": "fina_crujiente",
+    "sabor": "tostado"
+   },
+   "harina": {
+    "tipos": [
+     "Type 550",
+     "T65"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": 66,
+   "sal_pct": 2.0,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "poolish"
+    ],
+    "G": "pan",
+    "reparto_bloque": 0.6,
+    "prefermento": {
+     "tipo": "poolish",
+     "harina_pct": 33,
+     "agua_pct": 100,
+     "fresca_pct": 0.21,
+     "horas": [
+      12,
+      16
+     ],
+     "T": 21
+    },
+    "T_masa": 24,
+    "tiempo_total_h": 3.6
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     240,
+     250
+    ],
+    "tiempo_min": [
+     20,
+     25
+    ],
+    "vapor": true,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Hamelman, Bread (Ploetzblog)",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2010/Baguettes-mit-Poolish-nach-Jeffrey-Hamelman-20100611.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "Masa final: 5,2 g de fresca por 500 g de harina total; 2 h + 20 min + 1-1,5 h a 24 C."
+  },
+  {
+   "id": "pan-weizenlaib",
+   "nombre": "Weizenlaib con poolish frio (Geissler)",
+   "familia": "pan",
+   "estilo": "hogaza",
+   "descripcion": "Hogaza de trigo con poolish de 12 h a 10-12 C; masa final corta.",
+   "resultado": {},
+   "harina": {
+    "tipos": [
+     "Type 550"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": 68,
+   "sal_pct": 2.0,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "poolish"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "poolish",
+     "harina_pct": 30,
+     "agua_pct": 100,
+     "fresca_pct": 2.0,
+     "horas": 12,
+     "T": [
+      10,
+      12
+     ]
+    },
+    "T_masa": [
+     24,
+     25
+    ],
+    "tiempo_total_h": 2.5
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Geissler, Ploetzblog",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2011/Weizenlaib-20110320.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Hidratacion total supuesta 68 % (no comprobada en la fuente)."
+  },
+  {
+   "id": "pan-saturday-white",
+   "nombre": "Pan blanco en el dia (Forkish)",
+   "familia": "pan",
+   "estilo": "hogaza",
+   "descripcion": "Hogaza blanca hecha en un dia, en olla de hierro.",
+   "resultado": {
+    "miga": "abierta",
+    "corteza": "gruesa_oscura",
+    "sabor": "suave"
+   },
+   "harina": {
+    "tipos": [
+     "panificable",
+     "Type 550"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": 72,
+   "sal_pct": 2.1,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "directa"
+    ],
+    "G": "pan",
+    "reparto_bloque": 0.79,
+    "prefermento": null,
+    "T_masa": [
+     25,
+     26
+    ],
+    "tiempo_total_h": 6.25
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "bajo",
+    "pliegues": 3,
+    "metodo": "a mano con pliegues",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": 245,
+    "tiempo_min": [
+     45,
+     50
+    ],
+    "vapor": "cocotte",
+    "T_interior": null,
+    "superficie": "olla de hierro tapada 30 min"
+   },
+   "fuentes": [
+    {
+     "nombre": "Forkish, Flour Water Salt Yeast (Penguin)",
+     "url": "https://www.penguin.com.au/recipes/3995-the-saturday-white-bread",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "1000 g harina, 720 g agua a 32-35 C, 21 g sal, 4 g instantanea; bloque 5 h, apresto 1,25 h."
+  },
+  {
+   "id": "pan-overnight-white",
+   "nombre": "Pan blanco de noche (Forkish)",
+   "familia": "pan",
+   "estilo": "hogaza",
+   "descripcion": "Misma hogaza con muy poca levadura y 12-14 h de bloque: mas sabor, poco trabajo.",
+   "resultado": {},
+   "harina": {
+    "tipos": [
+     "panificable"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": 78,
+   "sal_pct": 2.2,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "directa"
+    ],
+    "G": "pan",
+    "reparto_bloque": 0.88,
+    "prefermento": null,
+    "T_masa": [
+     25,
+     26
+    ],
+    "tiempo_total_h": 14.25
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "bajo",
+    "pliegues": 3,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": 245,
+    "tiempo_min": null,
+    "vapor": "cocotte",
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Forkish, Flour Water Salt Yeast",
+     "url": "https://www.hummingbirdhigh.com/2013/02/overnight-artisan-bread-at-home.html",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "0,8 g instantanea por 1000 g; el motor indica que solo cumple las 12-14 h con la cocina a unos 18-20 C."
+  },
+  {
+   "id": "pan-ciabatta-biga",
+   "nombre": "Ciabatta con biga",
+   "familia": "pan",
+   "estilo": "ciabatta",
+   "descripcion": "Masa muy hidratada sobre biga: miga muy abierta e irregular.",
+   "resultado": {
+    "miga": "muy_abierta",
+    "corteza": "fina_crujiente"
+   },
+   "harina": {
+    "tipos": [
+     "fuerza",
+     "Type 550"
+    ],
+    "W": [
+     280,
+     350
+    ],
+    "proteina": null
+   },
+   "agua_pct": [
+    75,
+    78,
+    85
+   ],
+   "sal_pct": 2.0,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "biga"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "biga",
+     "harina_pct": [
+      40,
+      60
+     ],
+     "agua_pct": [
+      56,
+      60
+     ],
+     "fresca_pct": [
+      0.36,
+      0.8
+     ],
+     "horas": [
+      12,
+      20
+     ],
+     "T": [
+      15,
+      21
+     ]
+    },
+    "T_masa": null,
+    "tiempo_total_h": null
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 3,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Ponsford / Glezer (Ploetzblog)",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2011/Craig-Ponsfords-Ciabatta-nach-Maggie-Glezer-20111013.pdf",
+     "confianza": "B"
+    },
+    {
+     "nombre": "homebaking.at",
+     "url": "https://www.homebaking.at/en/biga-ciabatta/",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Hidratacion final y tiempos de la masa final: pendientes de fijar con la fuente completa."
+  },
+  {
+   "id": "pan-tartine",
+   "nombre": "Hogaza de masa madre (Tartine)",
+   "familia": "pan",
+   "estilo": "hogaza_mm",
+   "descripcion": "Hogaza de masa madre con levain joven, bloque caliente y apresto en frio o caliente.",
+   "resultado": {
+    "miga": "muy_abierta",
+    "corteza": "gruesa_oscura",
+    "sabor": "ligeramente_acido"
+   },
+   "harina": {
+    "tipos": [
+     "panificable 90 %",
+     "integral 10 %"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": [
+    75,
+    80,
+    80
+   ],
+   "sal_pct": 2.0,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_madre"
+    ],
+    "G": "masa_madre",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "levain",
+     "harina_pct": 10,
+     "agua_pct": 100,
+     "inoculacion_pct": 20
+    },
+    "T_masa": [
+     26,
+     28
+    ],
+    "tiempo_total_h": [
+     6,
+     8
+    ]
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "bajo",
+    "pliegues": 6,
+    "metodo": "pliegues cada 30 min",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [
+    {
+     "nombre": "Bloque con pliegues",
+     "tipo": "pasivo",
+     "senal": "+20-30 % de volumen (tarro de muestra)"
+    }
+   ],
+   "horneado": {
+    "T": [
+     245,
+     260
+    ],
+    "tiempo_min": null,
+    "vapor": "cocotte",
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Robertson, Tartine Bread (hoja de The Sourdough Journey)",
+     "url": "https://thesourdoughjourney.com/wp-content/uploads/2021/04/TSJ-Tartine-Basic-Country-Loaf-Worksheet-4_25_21.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Bloque 3-4 h a 26-28 C y apresto 3-4 h; el bloque con masa madre no esta calibrado: manda la senal del tarro."
+  },
+  {
+   "id": "pan-centeno-hamelman",
+   "nombre": "Pan de centeno con Sauerteig (Hamelman)",
+   "familia": "pan",
+   "estilo": "centeno",
+   "descripcion": "Pan de centeno con masa madre de centeno y escaldado de harina: miga densa y jugosa que dura dias.",
+   "resultado": {
+    "miga": "cerrada",
+    "sabor": "acido",
+    "cereal": "centeno",
+    "conservacion": "larga"
+   },
+   "harina": {
+    "tipos": [
+     "centeno 997 / 1150"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": null,
+   "sal_pct": null,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_madre"
+    ],
+    "G": "masa_madre",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "sauerteig",
+     "harina": 175,
+     "agua": 145,
+     "madre": 9,
+     "horas": [
+      14,
+      16
+     ],
+     "T": 21
+    },
+    "T_masa": null,
+    "tiempo_total_h": null
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "no aplica: el centeno casi no forma gluten; basta con mezclar bien"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     250,
+     210
+    ],
+    "tiempo_min": null,
+    "vapor": "inicial",
+    "T_interior": [
+     96,
+     98
+    ],
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Hamelman, Bread (Ploetzblog)",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2010/Roggensauerteigbrot-mit-Roggenmehlbruehstueck-nach-Jeffrey-Hamelman-20100611.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Solo el Sauerteig esta comprobado (ventana 16-32 h del motor frente a 14-16 h). Masa final pendiente."
+  },
+  {
+   "id": "pan-roggenmisch",
+   "nombre": "Pan mixto centeno-trigo 75/25 (Geissler)",
+   "familia": "pan",
+   "estilo": "mixto",
+   "descripcion": "Pan mixto de tradicion alemana con masa madre de centeno.",
+   "resultado": {
+    "cereal": "mezcla",
+    "sabor": "acido"
+   },
+   "harina": {
+    "tipos": [
+     "centeno 1150",
+     "Type 1050"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": null,
+   "sal_pct": null,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_madre"
+    ],
+    "G": "masa_madre",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "sauerteig",
+     "harina": 200,
+     "agua": 200,
+     "madre": 50,
+     "horas": 20,
+     "T": "ambiente"
+    },
+    "T_masa": null,
+    "tiempo_total_h": null
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "no aplica: el centeno casi no forma gluten; basta con mezclar bien"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Geissler, Ploetzblog",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2010/Roggenmischbrot-7525-20100102.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Masa final pendiente de completar con la fuente."
+  },
+  {
+   "id": "focaccia-ligur",
+   "nombre": "Focaccia genovesa (Nosrat)",
+   "familia": "focaccia",
+   "estilo": "genovesa",
+   "descripcion": "Focaccia media, con salmuera por encima: crujiente arriba y tierna dentro.",
+   "resultado": {
+    "altura": "media",
+    "interior": "alveolado",
+    "aceite": "mucho"
+   },
+   "harina": {
+    "tipos": [
+     "panificable",
+     "0"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": 75,
+   "sal_pct": 2.25,
+   "azucar_pct": 1.9,
+   "grasa": {
+    "tipo": "aceite",
+    "pct": null
+   },
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "directa"
+    ],
+    "G": "pan",
+    "reparto_bloque": 0.93,
+    "prefermento": null,
+    "T_masa": 24,
+    "tiempo_total_h": 13.6
+   },
+   "pieza": {
+    "tipo": "bandeja",
+    "g_cm2": null
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     230,
+     250
+    ],
+    "tiempo_min": [
+     25,
+     30
+    ],
+    "vapor": false,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Samin Nosrat",
+     "url": "https://ciaosamin.com/recipes/ligurian-foccia",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "800 g harina, 1/2 cdta seca activa (~1,5 g), 12-14 h a temperatura ambiente + 35-45 min en bandeja."
+  },
+  {
+   "id": "focaccia-biga-hamelman",
+   "nombre": "Focaccia alta con biga (Hamelman)",
+   "familia": "focaccia",
+   "estilo": "alta",
+   "descripcion": "Masa de ciabatta sobre biga, extendida en bandeja: alta y esponjosa.",
+   "resultado": {
+    "altura": "alta",
+    "interior": "alveolado"
+   },
+   "harina": {
+    "tipos": [
+     "Type 550"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": null,
+   "sal_pct": 2.0,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "biga"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "biga",
+     "agua_pct": 60,
+     "fresca_pct": 0.2,
+     "horas": [
+      12,
+      16
+     ],
+     "T": 21
+    },
+    "T_masa": null,
+    "tiempo_total_h": null
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Hamelman, Bread (Ploetzblog)",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2010/Focaccia-aus-Ciabatta-Teig-mit-Biga-nach-Jeffrey-Hamelman-20100611.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Masa final pendiente de completar con la fuente."
+  },
+  {
+   "id": "enr-brioche-mb",
+   "nombre": "Brioche (Modernist Bread)",
+   "familia": "enriquecido",
+   "estilo": "brioche",
+   "descripcion": "Brioche muy rico en mantequilla, con noche en nevera.",
+   "resultado": {
+    "riqueza": "muy_rico",
+    "dulzor": "medio",
+    "miga": "algodonosa"
+   },
+   "harina": {
+    "tipos": [
+     "fuerza"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": null,
+   "sal_pct": 3.1,
+   "azucar_pct": 15.5,
+   "grasa": {
+    "tipo": "mantequilla",
+    "pct": 50
+   },
+   "otros": [
+    {
+     "ing": "huevo",
+     "pct": 41
+    },
+    {
+     "ing": "leche",
+     "pct": 22
+    }
+   ],
+   "fermentacion": {
+    "metodos": [
+     "nevera"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": [
+     17.5,
+     20.5
+    ],
+    "levadura": "osmotolerante",
+    "levadura_pct": 1.62
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "completo",
+    "pliegues": 0,
+    "metodo": "mantequilla fria al final",
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "mucha grasa: necesita amasado intenso para sostenerla"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     170,
+     180
+    ],
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": [
+     88,
+     92
+    ],
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Modernist Bread, fe de erratas vol. 4",
+     "url": "https://modernistcuisine.com/wp-content/uploads/2018/12/BREAD_Vol4_244_Errata.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "2,5 h a temperatura ambiente + 12-14 h nevera + 2-4 h de apresto. Agua efectiva de huevo y leche ~50 %."
+  },
+  {
+   "id": "enr-hefezopf",
+   "nombre": "Trenza dulce (Hefezopf)",
+   "familia": "enriquecido",
+   "estilo": "trenza",
+   "descripcion": "Trenza alemana de leche, mantequilla y azucar, rapida.",
+   "resultado": {
+    "riqueza": "medio",
+    "dulzor": "medio"
+   },
+   "harina": {
+    "tipos": [
+     "Type 405",
+     "Type 550"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": null,
+   "sal_pct": 1.2,
+   "azucar_pct": 14,
+   "grasa": {
+    "tipo": "mantequilla",
+    "pct": 15
+   },
+   "otros": [
+    {
+     "ing": "leche",
+     "pct": 50
+    },
+    {
+     "ing": "huevo",
+     "pct": 10
+    }
+   ],
+   "fermentacion": {
+    "metodos": [
+     "directa"
+    ],
+    "G": "pan",
+    "reparto_bloque": 0.81,
+    "prefermento": null,
+    "T_masa": 27,
+    "tiempo_total_h": 2.5
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "posible: algo menos de volumen y miga menos hilada que amasando"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     175,
+     200
+    ],
+    "tiempo_min": [
+     25,
+     45
+    ],
+    "vapor": null,
+    "T_interior": [
+     88,
+     92
+    ],
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Familienkost",
+     "url": "https://www.familienkost.de/rezept_hefezopf.pdf",
+     "confianza": "C"
+    }
+   ],
+   "confianza": "C",
+   "notas": "500 g harina, 21 g fresca, 70 g azucar, 75 g mantequilla, 250 ml leche, 1 huevo; 2 h + 30 min en sitio templado."
+  },
+  {
+   "id": "enr-soft-butter-rolls",
+   "nombre": "Bollitos de mantequilla (Hamelman)",
+   "familia": "enriquecido",
+   "estilo": "bollos",
+   "descripcion": "Panecillos tiernos de leche y mantequilla.",
+   "resultado": {
+    "riqueza": "ligero",
+    "dulzor": "poco",
+    "miga": "tierna"
+   },
+   "harina": {
+    "tipos": [
+     "Type 550"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": null,
+   "sal_pct": 2.2,
+   "azucar_pct": 5.8,
+   "grasa": {
+    "tipo": "mantequilla",
+    "pct": 8
+   },
+   "otros": [
+    {
+     "ing": "leche",
+     "pct": 51
+    },
+    {
+     "ing": "huevo",
+     "pct": 18
+    }
+   ],
+   "fermentacion": {
+    "metodos": [
+     "directa"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": null,
+    "T_masa": 25,
+    "tiempo_total_h": 2.25
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "posible: algo menos de volumen y miga menos hilada que amasando"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": 200,
+    "tiempo_min": [
+     15,
+     18
+    ],
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Hamelman, Bread (Ploetzblog)",
+     "url": "https://www.ploetzblog.de/fileadmin/user_upload/Rezept-Archiv/2010/Soft-Butter-Rolls-nach-Jeffrey-Hamelman-20100922.pdf",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "B",
+   "notas": "275 g harina, 140 g leche, 1 huevo, 22 g mantequilla, 16 g azucar, 6 g sal, 14 g fresca; masa a 25 C; 1 h + 60-90 min. Validada fuera de muestra (-2 %)."
+  },
+  {
+   "id": "es-pan-gallego",
+   "nombre": "Pan gallego (IGP Pan Galego)",
+   "familia": "pan",
+   "estilo": "gallego",
+   "descripcion": "Hogaza, bolo, rosca o barra de miga muy alveolada y corteza gruesa (3-10 mm). Mucha agua, masa madre y coccion larga en solera.",
+   "resultado": {
+    "miga": "muy_abierta",
+    "corteza": "gruesa_oscura",
+    "sabor": "tostado",
+    "conservacion": "media"
+   },
+   "harina": {
+    "tipos": [
+     "trigo gallego (minimo 25 %, W 100-200, P/L 0,25-0,70, proteina > 12 %)",
+     "harina de fuerza W > 300"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": [
+    75,
+    78,
+    85
+   ],
+   "sal_pct": [
+    1.5,
+    1.8,
+    1.8
+   ],
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_madre",
+     "masa_madre+levadura"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "masa madre",
+     "harina_pct_min": 15
+    },
+    "T_masa": null,
+    "tiempo_total_h": [
+     3,
+     6
+    ],
+    "fresca_pct_max": 1.5,
+    "notas": "reposo en bloque minimo 60 min; reposos acumulados minimo 3 h; frio permitido por encima de 0 C"
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "g": [
+     250,
+     500,
+     1000,
+     1500
+    ],
+    "formatos": [
+     "bolo/hogaza",
+     "rosca",
+     "bola/torta",
+     "barra 300 g"
+    ]
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "a mano el formado",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     250,
+     220
+    ],
+    "tiempo_min": [
+     55,
+     70
+    ],
+    "vapor": true,
+    "T_interior": null,
+    "superficie": "solera refractaria"
+   },
+   "fuentes": [
+    {
+     "nombre": "Pliego de condiciones IGP Pan Galego (MAPA, 2018)",
+     "url": "https://www.mapa.gob.es/images/es/pan_gallego_2018_05_01_tcm30-524592.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "A",
+   "notas": [
+    "Coccion: unos 60 min para piezas de 1 kg. Enfriar minimo 1 h. Motor: con 3,5 h de reposos a 24 C pide 1,45 % de fresca si no cuenta la masa madre (dentro del tope).",
+    "El pliego admite horno de 180 a 270 °C según formato; en horno de casa: 250 °C con vapor y bajar a 220 °C."
+   ]
+  },
+  {
+   "id": "es-pan-de-cea",
+   "nombre": "Pan de Cea (IGP)",
+   "familia": "pan",
+   "estilo": "gallego",
+   "descripcion": "Pieza alargada de 1-1,2 kg con su hendidura central, cocida 2 h en horno de piedra de lena.",
+   "resultado": {
+    "miga": "abierta",
+    "corteza": "gruesa_oscura",
+    "conservacion": "larga"
+   },
+   "harina": {
+    "tipos": [
+     "trigo del pais (normalmente > 50 %)",
+     "trigo de fuera"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": null,
+   "sal_pct": null,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_madre"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "formento (masa de la amasada anterior)"
+    },
+    "T_masa": null,
+    "tiempo_total_h": null,
+    "fresca_pct_max": 0.3,
+    "notas": "primer reposo 45-60 min; tres tendas de 25-30 min (dos si el tiempo es favorable)"
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "g": [
+     1000,
+     1200
+    ],
+    "formatos": [
+     "poia 1-1,2 kg, 15-18 x 32-38 cm",
+     "molete 0,5-0,6 kg"
+    ]
+   },
+   "amasado": {
+    "desarrollo": "completo",
+    "pliegues": 0,
+    "metodo": "minimo 60 min a mano o 45 min a maquina",
+    "tiempo_min": [
+     45,
+     60
+    ],
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "posible, pero el pliego de la IGP exige amasar 45-60 min: dejaria de ser Pan de Cea"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": 120,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": "horno circular de piedra de lena"
+   },
+   "fuentes": [
+    {
+     "nombre": "Pliego de condiciones IGP Pan de Cea (Xunta, 2003)",
+     "url": "https://agacal.xunta.gal/sites/default/files/calidade-alimentaria/panaderia-e-reposteria/Pliego_de_Condiciones_IGP_Pan_de_Cea_mayo_2003.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "B",
+   "notas": "El pliego no da agua, sal ni proporcion de formento: pendiente de otra fuente."
+  },
+  {
+   "id": "es-pan-de-cruz",
+   "nombre": "Pan de cruz de Ciudad Real (IGP, candeal)",
+   "familia": "pan",
+   "estilo": "candeal",
+   "descripcion": "Hogaza abombada de miga blanca, compacta y prieta, corteza fina y lisa; dura 6-7 dias.",
+   "resultado": {
+    "miga": "cerrada",
+    "corteza": "fina",
+    "sabor": "suave",
+    "conservacion": "larga"
+   },
+   "harina": {
+    "tipos": [
+     "candeal"
+    ],
+    "W": [
+     140,
+     200
+    ],
+    "proteina": null,
+    "PL": [
+     0.5,
+     1.0
+    ]
+   },
+   "agua_pct": [
+    40,
+    45,
+    50
+   ],
+   "sal_pct": [
+    1.5,
+    1.8,
+    1.8
+   ],
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_vieja+levadura"
+    ],
+    "G": "pan_denso",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "masa vieja",
+     "harina_pct": [
+      15,
+      25
+     ],
+     "horas": [
+      4,
+      5
+     ]
+    },
+    "T_masa": [
+     24,
+     25
+    ],
+    "tiempo_total_h": [
+     2.0,
+     3.0
+    ],
+    "fresca_pct": [
+     1.8,
+     2.2
+    ],
+    "notas": "camara a 26-30 C y 40-45 % de humedad, 1 h 20 min - 2 h 20 min"
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "g_masa": [
+     900,
+     1000
+    ],
+    "formatos": [
+     "grande 900-1000 g",
+     "pequeno 660-760 g",
+     "libreta 370-470 g",
+     "panecillo 150-180 g"
+    ]
+   },
+   "amasado": {
+    "desarrollo": "refinado",
+    "pliegues": 0,
+    "metodo": "amasado + sobado en cilindros hasta masa lisa",
+    "tiempo_min": [
+     20,
+     30
+    ],
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "masa dura refinada (sobado): necesita cilindro o rodillo"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     250,
+     200
+    ],
+    "tiempo_min": [
+     30,
+     50
+    ],
+    "vapor": false,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Pliego de condiciones IGP Pan de Cruz de Ciudad Real (MAPA, 2017)",
+     "url": "https://www.mapa.gob.es/images/es/pan_cruz_creal_2017_08_02_tcm30-209847.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "A",
+   "notas": "15 min a 250 C y el resto bajando a 200 C. Sin cilindro en casa: plegar y estirar con rodillo muchas veces (sobado manual)."
+  },
+  {
+   "id": "es-pan-candeal-casero",
+   "nombre": "Pan candeal o bregado casero",
+   "familia": "pan",
+   "estilo": "candeal",
+   "descripcion": "Version casera del pan de miga prieta castellano, sobado con rodillo.",
+   "resultado": {
+    "miga": "cerrada",
+    "corteza": "fina",
+    "conservacion": "larga"
+   },
+   "harina": {
+    "tipos": [
+     "candeal",
+     "panificable de poca fuerza"
+    ],
+    "W": [
+     140,
+     200
+    ],
+    "proteina": null
+   },
+   "agua_pct": [
+    45,
+    50,
+    50
+   ],
+   "sal_pct": 1.7,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_vieja+levadura",
+     "directa"
+    ],
+    "G": "pan_denso",
+    "reparto_bloque": null,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": null,
+    "levadura": "seca",
+    "levadura_pct": 0.5,
+    "notas": "se puede anadir masa madre para dar sabor, pero no se aconseja fermentarlo solo con ella"
+   },
+   "pieza": null,
+   "amasado": {
+    "desarrollo": "refinado",
+    "pliegues": 0,
+    "metodo": "sobado con rodillo hasta masa lisa y brillante; cortes antes de fermentar",
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "masa dura refinada (sobado): necesita cilindro o rodillo"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     250,
+     200
+    ],
+    "tiempo_min": [
+     30,
+     45
+    ],
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Invitado de invierno, pan candeal",
+     "url": "https://invitadoinvierno.com/pan-candeal-receta",
+     "confianza": "C"
+    },
+    {
+     "nombre": "Pliego IGP Pan de Cruz de Ciudad Real",
+     "url": "https://www.mapa.gob.es/images/es/pan_cruz_creal_2017_08_02_tcm30-209847.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Hidratacion 45-50 %: con mas agua la masa se vuelve inmanejable por su extensibilidad."
+  },
+  {
+   "id": "es-pan-alfacar",
+   "nombre": "Pan de Alfacar (IGP)",
+   "familia": "pan",
+   "estilo": "andaluz",
+   "descripcion": "Pan granadino de masa semiblanda, con masa madre y fermentacion unica y corta, cocido en solera.",
+   "resultado": {
+    "miga": "media",
+    "corteza": "media",
+    "sabor": "suave"
+   },
+   "harina": {
+    "tipos": [
+     "panificable de poca fuerza"
+    ],
+    "W": [
+     110,
+     150
+    ],
+    "proteina": null,
+    "PL": [
+     0.3,
+     0.6
+    ]
+   },
+   "agua_pct": [
+    55,
+    58,
+    62
+   ],
+   "sal_pct": [
+    1.5,
+    1.8,
+    1.8
+   ],
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_madre+levadura"
+    ],
+    "G": "pan_denso",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "masa madre",
+     "harina_pct": [
+      10,
+      25
+     ]
+    },
+    "T_masa": [
+     21,
+     27
+    ],
+    "tiempo_total_h": [
+     1.5,
+     2.5
+    ],
+    "fresca_pct_max": 3.0,
+    "notas": "bloque 5-20 min, bola minimo 15 min, fermentacion final 1-2 h sin camara"
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "formatos": [
+     "bollo 80/125/250 g",
+     "rosco 250 g",
+     "rosca 500 g",
+     "hogaza 250/500/1000 g"
+    ]
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     200,
+     230
+    ],
+    "tiempo_min": [
+     25,
+     50
+    ],
+    "vapor": null,
+    "T_interior": null,
+    "superficie": "solera refractaria"
+   },
+   "fuentes": [
+    {
+     "nombre": "Pliego de condiciones IGP Pan de Alfacar (Junta de Andalucia)",
+     "url": "https://www.juntadeandalucia.es/export/drupaljda/Pliego_pan_alfacar.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "A",
+   "notas": "Tiempos minimos: bollo 80-125 g 25 min, hogaza 500 g 40 min, hogaza 1 kg 50 min."
+  },
+  {
+   "id": "es-mollete-antequera",
+   "nombre": "Mollete de Antequera (IGP)",
+   "familia": "pan",
+   "estilo": "mollete",
+   "descripcion": "Bollo plano, blando y poco cocido (baja cochura), para desayuno.",
+   "resultado": {
+    "miga": "tierna",
+    "corteza": "blanda"
+   },
+   "harina": {
+    "tipos": [
+     "floja"
+    ],
+    "W": [
+     110,
+     170
+    ],
+    "proteina": null,
+    "PL": [
+     0.25,
+     0.65
+    ]
+   },
+   "agua_pct": null,
+   "sal_pct": null,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [
+    {
+     "ing": "salvado",
+     "pct_masa_min": 3.8,
+     "opcional": true
+    }
+   ],
+   "fermentacion": {
+    "metodos": [
+     "directa",
+     "masa_madre"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": [
+     null,
+     3
+    ],
+    "notas": "masa a 30 C maximo; bola hasta 70 min; fermentacion hasta 3 h a 40 C maximo y 50 % de humedad minima"
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "g": [
+     55,
+     100
+    ],
+    "formatos": [
+     "mollete >= 100 g",
+     "mediano 55-99 g",
+     "pequeno < 55 g"
+    ]
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "tiempo_min": [
+     null,
+     30
+    ],
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     null,
+     350
+    ],
+    "tiempo_min": [
+     null,
+     15
+    ],
+    "vapor": null,
+    "T_interior": null,
+    "superficie": "baja cochura"
+   },
+   "fuentes": [
+    {
+     "nombre": "Pliego de condiciones IGP Mollete de Antequera (MAPA, 2020)",
+     "url": "https://www.mapa.gob.es/images/es/mollete_antequera_2020_11_17_tcm30-635354.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "B",
+   "notas": "Humedad del producto 32-45 %. El pliego no da agua, sal ni dosis de levadura: pendiente."
+  },
+  {
+   "id": "es-pa-de-pages",
+   "nombre": "Pa de pages catala (IGP)",
+   "familia": "pan",
+   "estilo": "pages",
+   "descripcion": "Pan redondo girado, de corteza crujiente y miga tierna de alveolado irregular, con cierta acidez.",
+   "resultado": {
+    "miga": "abierta",
+    "corteza": "gruesa_oscura",
+    "sabor": "ligeramente_acido"
+   },
+   "harina": {
+    "tipos": [
+     "trigo (cualquier variedad y extraccion)"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": [
+    60,
+    65,
+    70
+   ],
+   "sal_pct": null,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_madre+levadura"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": {
+     "tipo": "pie de masa de la noche anterior",
+     "harina_pct": [
+      15,
+      20
+     ],
+     "horas": [
+      12,
+      24
+     ]
+    },
+    "T_masa": null,
+    "tiempo_total_h": [
+     4,
+     6
+    ],
+    "fresca_pct_max": 2.0,
+    "notas": "fermentacion total minima 4 h"
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "g": [
+     200,
+     3000
+    ]
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "formado siempre a mano",
+    "alternativa_pliegues": {
+     "posible": true,
+     "motivo": "recomendable: miga mas abierta y masa menos caliente"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": "solera refractaria"
+   },
+   "fuentes": [
+    {
+     "nombre": "Pliego de condiciones IGP Pa de Pages Catala (Generalitat)",
+     "url": "https://agricultura.gencat.cat/web/.content/al_alimentacio/al02_qualitat_alimentaria/normativa-dop-igp/plecs-vigor/pliego_condiciones_igp_pa_pages.pdf",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "A",
+   "notas": "Motor: con 4,5 h a 24 C pide ~1 % de fresca si no cuenta el pie de masa (dentro del tope del 2 %)."
+  },
+  {
+   "id": "es-ensaimada",
+   "nombre": "Ensaimada de Mallorca (IGP)",
+   "familia": "enriquecido",
+   "estilo": "ensaimada",
+   "descripcion": "Espiral de masa azucarada con manteca de cerdo (saim) y masa madre, fermentada muchas horas.",
+   "resultado": {
+    "riqueza": "medio",
+    "dulzor": "medio",
+    "miga": "hojaldrada"
+   },
+   "harina": {
+    "tipos": [
+     "fuerza"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": null,
+   "sal_pct": null,
+   "azucar_pct": 0,
+   "grasa": {
+    "tipo": "manteca de cerdo",
+    "pct": null
+   },
+   "otros": [
+    {
+     "ing": "huevo"
+    },
+    {
+     "ing": "azucar"
+    }
+   ],
+   "fermentacion": {
+    "metodos": [
+     "masa_madre+levadura"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": [
+     12,
+     null
+    ],
+    "notas": "fermentacion de la pieza formada minimo 12 h"
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "g": [
+     60,
+     2000
+    ]
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "necesita una red de gluten muy fuerte para estirarla fina"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": null,
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "IGP Ensaimada de Mallorca (resumen del pliego, Infoagro)",
+     "url": "https://www.infoagro.com/denominaciones/denominacion_origen.asp?id=246&idp=34&p=17",
+     "confianza": "B"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Formula pendiente de abrir el pliego completo (Govern de les Illes Balears)."
+  },
+  {
+   "id": "es-telera-cordobesa",
+   "nombre": "Telera cordobesa",
+   "familia": "pan",
+   "estilo": "candeal",
+   "descripcion": "Pan alargado de la familia candeal, de miga prieta; el pan clasico del salmorejo.",
+   "resultado": {
+    "miga": "cerrada",
+    "corteza": "fina",
+    "conservacion": "larga"
+   },
+   "harina": {
+    "tipos": [
+     "candeal",
+     "panificable de poca fuerza"
+    ],
+    "W": [
+     140,
+     200
+    ],
+    "proteina": null
+   },
+   "agua_pct": [
+    45,
+    50,
+    50
+   ],
+   "sal_pct": 1.7,
+   "azucar_pct": 0,
+   "grasa": null,
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "masa_vieja+levadura",
+     "directa"
+    ],
+    "G": "pan_denso",
+    "reparto_bloque": null,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": null
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "formatos": [
+     "telera alargada"
+    ]
+   },
+   "amasado": {
+    "desarrollo": "refinado",
+    "pliegues": 0,
+    "metodo": "sobado con rodillo",
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "masa dura refinada (sobado): necesita cilindro o rodillo"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     250,
+     200
+    ],
+    "tiempo_min": [
+     30,
+     45
+    ],
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Telera (Wikipedia, que cita a Yarza, Pan de pueblo y 100 recetas de pan de pueblo)",
+     "url": "https://en.wikipedia.org/wiki/Telera_(Spanish_bread)",
+     "confianza": "C"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Formula de la familia candeal; la propia de la telera esta en los libros de Yarza (pendiente)."
+  },
+  {
+   "id": "es-torta-aranda",
+   "nombre": "Torta de Aranda (pan de aceite)",
+   "familia": "focaccia",
+   "estilo": "torta_aceite",
+   "descripcion": "Pan plano y redondo de Burgos, con mucho aceite de oliva en la masa y marcado con los dedos.",
+   "resultado": {
+    "altura": "fina",
+    "aceite": "mucho"
+   },
+   "harina": {
+    "tipos": [
+     "fuerza"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": [
+    42,
+    42,
+    70
+   ],
+   "sal_pct": 2.0,
+   "azucar_pct": 0,
+   "grasa": {
+    "tipo": "aceite de oliva virgen extra",
+    "pct": 12
+   },
+   "otros": [],
+   "fermentacion": {
+    "metodos": [
+     "directa",
+     "masa_madre+levadura"
+    ],
+    "G": "pan",
+    "reparto_bloque": null,
+    "prefermento": null,
+    "T_masa": null,
+    "tiempo_total_h": null,
+    "fresca_pct": 2.0
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "formatos": [
+     "torta redonda plana"
+    ]
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "masa demasiado firme para plegar"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": [
+     230,
+     250
+    ],
+    "tiempo_min": [
+     15,
+     25
+    ],
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null
+   },
+   "fuentes": [
+    {
+     "nombre": "Directo al Paladar",
+     "url": "https://www.directoalpaladar.com/recetas-de-panes/torta-pan-aceite-receta-pan-facil-que-vas-a-querer-hacer-todas-semanas",
+     "confianza": "C"
+    },
+    {
+     "nombre": "Fascinating Spain",
+     "url": "https://www.fascinatingspain.com/articulo/spanish-cuisine-recipes/aranda-olive-oil-torta-recipe/20201104114832070783.html",
+     "confianza": "C"
+    }
+   ],
+   "confianza": "C",
+   "notas": "Fuentes contradictorias en el agua: 42 % (Directo al Paladar: 500 g harina, 210 g agua, 10 g fresca, 60 g aceite, 10 g sal) frente a 70 % (Fascinating Spain). Pendiente de fuente de panadero."
+  },
+  {
+   "id": "es-tortas-aceite-castilleja",
+   "nombre": "Tortas de aceite de Castilleja de la Cuesta (ETG)",
+   "familia": "enriquecido",
+   "estilo": "torta_aceite_dulce",
+   "descripcion": "Torta fina, crujiente y dulce con anis y sesamo, estirada a mano, de pocos milimetros.",
+   "resultado": {
+    "dulzor": "medio",
+    "riqueza": "muy_rico"
+   },
+   "harina": {
+    "tipos": [
+     "trigo"
+    ],
+    "W": null,
+    "proteina": null
+   },
+   "agua_pct": [
+    34,
+    37,
+    40
+   ],
+   "sal_pct": 0.45,
+   "azucar_pct": 5.2,
+   "grasa": {
+    "tipo": "aceite de oliva virgen extra",
+    "pct": 41.5
+   },
+   "otros": [
+    {
+     "ing": "matalahuga (anis en grano)",
+     "pct": 1.5
+    },
+    {
+     "ing": "sesamo",
+     "pct": 1.0
+    },
+    {
+     "ing": "esencia de anis",
+     "pct": 0.05
+    }
+   ],
+   "fermentacion": {
+    "metodos": [
+     "directa"
+    ],
+    "G": "pan_denso",
+    "reparto_bloque": null,
+    "prefermento": null,
+    "T_masa": [
+     25,
+     28
+    ],
+    "tiempo_total_h": null,
+    "levadura_pct": [
+     1,
+     3
+    ]
+   },
+   "pieza": {
+    "tipo": "pieza",
+    "diametro_cm": [
+     11,
+     15
+    ],
+    "grosor_mm": [
+     1,
+     7
+    ]
+   },
+   "amasado": {
+    "desarrollo": "medio",
+    "pliegues": 0,
+    "metodo": "normal",
+    "alternativa_pliegues": {
+     "posible": false,
+     "motivo": "masa demasiado firme para plegar"
+    }
+   },
+   "etapas": [],
+   "horneado": {
+    "T": null,
+    "tiempo_min": "pocos minutos",
+    "vapor": null,
+    "T_interior": null,
+    "superficie": null,
+    "humedad_final_max_pct": 6
+   },
+   "fuentes": [
+    {
+     "nombre": "Especialidad Tradicional Garantizada (MAPA)",
+     "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/etg/Tortas_de_Aceite_de_Castilleja_de_la_Cuesta.aspx",
+     "confianza": "A"
+    }
+   ],
+   "confianza": "B",
+   "notas": "Porcentajes de la ETG pasados a % de panadero: harina 66,8 % de la masa -> aceite 41,5 %, azucares 5,2 %. Fermentacion y horno sin cifras en la ETG."
+  }
+ ]
+}
